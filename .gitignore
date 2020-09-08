@@ -1,0 +1,8 @@
+target/*
+
+# Eclipse
+.classpath
+.factorypath
+.project
+.pydevproject
+.settings/
