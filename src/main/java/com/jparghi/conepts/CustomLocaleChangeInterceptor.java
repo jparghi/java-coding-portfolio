@@ -12,6 +12,11 @@ import java.util.Locale;
 
 public class CustomLocaleChangeInterceptor extends LocaleChangeInterceptor {
 
+   public CustomLocaleChangeInterceptor() {
+    setParamName("lanauge");
+  }
+
+
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
     throws ServletException {

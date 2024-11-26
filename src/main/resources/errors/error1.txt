@@ -1,0 +1,19 @@
+2024-11-26 10:33:11.701 DEBUG 25908 --- [ (self-tuning)'] o.s.web.servlet.DispatcherServlet        : Unresolved failure from "FORWARD" dispatch: java.lang.IllegalArgumentException: Locale part "%$%$%$%" contains invalid characters
+<Nov 26, 2024 10:33:11,702 AM EST> <Error> <HTTP> <BEA-101017> <[ServletContext@1616776324[app:RNetSSO module:RNetSSO path:null spec-version:3.1], request: weblogic.servlet.internal.ServletRequestImpl@771ea1e6[
+GET /rnetsso/ssologin?language=%$%$%$% HTTP/1.1
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+]] Root cause of ServletException.
+java.lang.IllegalArgumentException: Locale part "%$%$%$%" contains invalid characters
+	at org.springframework.util.StringUtils.validateLocalePart(StringUtils.java:885)
+	at org.springframework.util.StringUtils.parseLocale(StringUtils.java:822)
+	at org.springframework.web.servlet.i18n.LocaleChangeInterceptor.parseLocaleValue(LocaleChangeInterceptor.java:195)
+	at org.springframework.web.servlet.i18n.LocaleChangeInterceptor.preHandle(LocaleChangeInterceptor.java:154)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	Truncated. see log file for complete stacktrace
