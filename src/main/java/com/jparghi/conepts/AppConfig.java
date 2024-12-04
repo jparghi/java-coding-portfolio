@@ -11,7 +11,7 @@ public class AppConfig {
   public FilterRegistrationBean<LocaleValidationFilter> localeValidationFilter() {
     FilterRegistrationBean<LocaleValidationFilter> registrationBean = new FilterRegistrationBean<>();
     registrationBean.setFilter(new LocaleValidationFilter());
-    registrationBean.addUrlPatterns("/login"); // Apply to the relevant URL pattern
+    registrationBean.addUrlPatterns("/rnetsso/ssologin"); // Apply to the relevant URL pattern
     registrationBean.setOrder(1); // Set the order if you have other filters
     return registrationBean;
   }

@@ -1,6 +1,6 @@
 2024-11-26 10:33:11.701 DEBUG 25908 --- [ (self-tuning)'] o.s.web.servlet.DispatcherServlet        : Unresolved failure from "FORWARD" dispatch: java.lang.IllegalArgumentException: Locale part "%$%$%$%" contains invalid characters
-<Nov 26, 2024 10:33:11,702 AM EST> <Error> <HTTP> <BEA-101017> <[ServletContext@1616776324[app:RNetSSO module:RNetSSO path:null spec-version:3.1], request: weblogic.servlet.internal.ServletRequestImpl@771ea1e6[
-GET /rnetsso/ssologin?language=%$%$%$% HTTP/1.1
+<Nov 26, 2024 10:33:11,702 AM EST> <Error> <HTTP> <BEA-101017> <[ServletContext@1616776324[app:RNetSSO module:model path:null spec-version:3.1], request: weblogic.servlet.internal.ServletRequestImpl@771ea1e6[
+GET /login?language=%$%$%$% HTTP/1.1
 Connection: keep-alive
 Cache-Control: max-age=0
 Upgrade-Insecure-Requests: 1
