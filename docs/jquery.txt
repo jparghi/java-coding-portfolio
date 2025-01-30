@@ -1,1 +1,6 @@
 Upgrading jQuery from 1.10.4/2.1.4 to 3.7.1 caused significant UI breakages due to incompatibilities with Dojo, Accordion library, WET4, and custom JavaScript components. Several legacy functions and event handlers no longer work as expected, requiring extensive refactoring and testing. Given the high impact on stability and effort required for fixes, we recommend postponing the upgrade or exploring a phased migration strategy with compatibility patches.
+
+
+Compatibility Issues: WET4 (Web Experience Toolkit) relies on older jQuery APIs (e.g., $.browser, $.isFunction, $.parseJSON), which were removed or changed in jQuery 3.x, leading to broken UI components.
+	2.	Event Handling Breakages: Certain WET4 plugins (e.g., accordions, modals, form validation) stopped functioning due to changes in event delegation and .on() binding behavior in jQuery 3.x.
+	3.	Refactoring Overhead: Fixing WET4 dependencies requires major updates to scripts, potential core modifications, and thorough testing across multiple components, making the upgrade high risk without official WET4 compatibility updates.
