@@ -1,4 +1,4 @@
-/**
+package diff; /**
  * Example demonstrating usage of TreeMap and its sorted behavior
  */
 import java.util.*;
