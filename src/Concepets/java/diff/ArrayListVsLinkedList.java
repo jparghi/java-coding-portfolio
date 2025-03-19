@@ -1,37 +1,18 @@
-package diff;
-
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+/**
+ * Example demonstrating differences between ArrayList and LinkedList
+ */
+import java.util.*;
 
 public class ArrayListVsLinkedList {
+    public static void main(String[] args) {
+        List<String> arrayList = new ArrayList<>();
+        arrayList.add("A");
+        arrayList.add(1, "B");
+        System.out.println("ArrayList: " + arrayList);
 
-  public static void main(String[] args) {
-    arrayList();
-    linkListConcept();
-  }
-
-  private static void linkListConcept() {
-    System.out.println("LinkedList:");
-    LinkedList<String> linkedList = new LinkedList<>();
-    linkedList.add("A");
-    linkedList.add("B");
-    linkedList.add(1, "C");
-    for (String s : linkedList) {
-      System.out.println(s);
+        List<String> linkedList = new LinkedList<>();
+        linkedList.add("A");
+        linkedList.add(1, "B");
+        System.out.println("LinkedList: " + linkedList);
     }
-  }
-
-  private static void arrayList() {
-    System.out.println("ArrayList");
-    List<String> list = new ArrayList<>();
-    list.add("A");
-    list.add("B");
-    list.add(1, "X");
-
-    for (String s : list) {
-      System.out.println(s);
-    }
-  }
-
 }
