@@ -1,4 +1,4 @@
-/**
+package diff; /**
  * Example demonstrating differences between HashMap and Hashtable
  */
 import java.util.*;

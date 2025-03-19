@@ -1,4 +1,4 @@
-/**
+package diff; /**
  * Example demonstrating difference between Collection Interface and Collections Utility Class
  */
 import java.util.*;

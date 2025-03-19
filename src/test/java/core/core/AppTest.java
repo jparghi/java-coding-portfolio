@@ -1,4 +1,4 @@
-package com.jparghi.conepts;
+package core.core;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-/**
+package diff; /**
  * Example demonstrating differences between ArrayList and LinkedList
  */
 import java.util.*;

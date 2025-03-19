@@ -1,4 +1,4 @@
-/**
+package diff; /**
  * Example demonstrating Fail-Fast and Fail-Safe Iterators
  */
 import java.util.*;

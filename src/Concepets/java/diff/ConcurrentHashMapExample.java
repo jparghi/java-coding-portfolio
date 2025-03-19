@@ -1,4 +1,4 @@
-/**
+package diff; /**
  * Example demonstrating thread-safe ConcurrentHashMap usage
  */
 import java.util.concurrent.*;
