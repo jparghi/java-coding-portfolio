@@ -1,3 +1,5 @@
+package src.concepts.java.basics.ArrayProblems;
+
 import java.util.Arrays;
 
 public class ArrayProblems {

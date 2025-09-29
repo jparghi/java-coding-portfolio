@@ -1,3 +1,5 @@
+package concepts.java.algorithms;
+
 import java.util.*;
 
 public class DynamicProgramming {
